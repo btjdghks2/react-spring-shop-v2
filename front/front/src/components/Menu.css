@@ -1,0 +1,11 @@
+.Menustyle{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-spacing: 40px;
+    border-collapse: separate;
+
+
+
+
+}

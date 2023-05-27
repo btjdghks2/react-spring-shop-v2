@@ -1,7 +1,8 @@
 import React from 'react'
+import "./Logo.css"
 
 export const Logo = () => {
   return (
-    <div><center>Logo</center></div>
+    <div className='Logotext'>Logo</div>
   )
 }
