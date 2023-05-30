@@ -13,7 +13,7 @@ public class PrizeController {
 
     private final PrizeService prizeService;
 
-    @GetMapping("/")
+    @GetMapping("/outer")
     public ResponseEntity<?> home() {
         return new ResponseEntity<>(prizeService.);
     }
