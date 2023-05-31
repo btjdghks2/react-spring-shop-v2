@@ -3,5 +3,9 @@ package com.example.shopspring.Respositorylist.CategoryRepository;
 import com.example.shopspring.Entitylist.CategoryEntity.TshirtEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface TshirtRepository extends JpaRepository<Long, TshirtEntity> {
+import java.util.List;
+
+public interface TshirtRepository extends JpaRepository<TshirtEntity, Long> {
+    @Override
+    List<TshirtEntity> findAll();
 }
