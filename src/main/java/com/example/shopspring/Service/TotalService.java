@@ -37,4 +37,20 @@ public class TotalService {
     public List<TshirtEntity> TshirtIndexLogic() {
         return tshirtRepository.findAll();
     }
+
+    public OuterEntity OuterDetailLogic(Long Pnumber) {
+        return outerRepository.findById(Pnumber).orElseThrow(()-> new IllegalArgumentException("잘못된 상품입니다"));
+    }
+
+    public PantsEntity PantsDetailLogic(Long Pnumber) {
+        return pantsRepository.findById(Pnumber).orElseThrow(()-> new IllegalArgumentException("잘못된 상품입니다"));
+    }
+
+    public ShoseEntity ShoseDetailLogic(Long Pnumber) {
+        return shoseRepository.findById(Pnumber).orElseThrow(()-> new IllegalArgumentException("잘못된 상품입니다"));
+    }
+
+    public TshirtEntity TshirtDetailLogic(Long Pnumber) {
+        return tshirtRepository.findById(Pnumber).orElseThrow(()-> new IllegalArgumentException("잘못된 상품입니다"));
+    }
 }
