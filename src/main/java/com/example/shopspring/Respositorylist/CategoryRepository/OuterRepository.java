@@ -9,4 +9,6 @@ public interface OuterRepository extends JpaRepository<OuterEntity, Long> {
 
     @Override
     List<OuterEntity> findAll();
+
+
 }
