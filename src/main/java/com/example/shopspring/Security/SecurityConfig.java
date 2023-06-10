@@ -77,6 +77,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 })
                 .deleteCookies("JSESSIONID","remember-me");
 
+        http
+                .sessionManagement()
+                .maximumSessions(5)
+                .maxSessionsPreventsLogin(false);
+
+
 
 
 
