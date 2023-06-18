@@ -16,7 +16,7 @@ public class OrderEntity extends ProductEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @JoinColumn
-    @ManyToOne
-    private ProductNumber productNumber;
+    @JoinColumn(name = "product_id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    private ProductEntity productEntity;
 }
