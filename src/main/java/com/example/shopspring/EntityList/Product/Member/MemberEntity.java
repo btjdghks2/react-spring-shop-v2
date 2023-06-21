@@ -1,9 +1,12 @@
 package com.example.shopspring.EntityList.Product.Member;
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
+@Data
 public class MemberEntity {
 
     @Id
@@ -11,7 +14,10 @@ public class MemberEntity {
     private Long id;
 
     @Column
-    private String memberId;
+    private String ShoppingmalId;
+
+    @Column
+    private String membername;
 
     @Column
     private String memberpassword;
