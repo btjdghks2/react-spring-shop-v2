@@ -1,7 +1,7 @@
 package com.example.shopspring.Controller;
 
 
-import com.example.shopspring.EntityList.Product.ProductEntity;
+import com.example.shopspring.EntityList.Product.product.ProductEntity;
 import com.example.shopspring.Respositorylist.ProductRepository;
 import com.example.shopspring.Service.ShoppingPageService;
 import lombok.RequiredArgsConstructor;

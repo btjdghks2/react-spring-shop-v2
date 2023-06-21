@@ -1,4 +1,4 @@
-package com.example.shopspring.EntityList.Product;
+package com.example.shopspring.EntityList.Product.product;
 
 
 import lombok.AllArgsConstructor;

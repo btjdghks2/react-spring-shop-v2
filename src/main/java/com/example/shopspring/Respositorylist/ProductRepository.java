@@ -1,6 +1,6 @@
 package com.example.shopspring.Respositorylist;
 
-import com.example.shopspring.EntityList.Product.ProductEntity;
+import com.example.shopspring.EntityList.Product.product.ProductEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
