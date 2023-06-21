@@ -1,10 +1,12 @@
 package com.example.shopspring.EntityList.Product.product;
 
 
+import com.example.shopspring.EntityList.Product.List.RepleEntity;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @AllArgsConstructor
@@ -24,4 +26,8 @@ public class ProductEntity {
 
     @Column
     private String productContent;
+
+    @JoinColumn(name = "reple_id")
+    @OneToMany
+    private List<RepleEntity> repleEntityList;
 }
