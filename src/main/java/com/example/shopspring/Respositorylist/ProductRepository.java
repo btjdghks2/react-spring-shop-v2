@@ -26,4 +26,6 @@ public interface ProductRepository extends JpaRepository<ProductEntity, Long> {
             "from product" +
             "where productnumber ==3")
     List<ProductEntity> shosecategory();
+
+
 }

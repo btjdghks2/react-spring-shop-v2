@@ -19,7 +19,7 @@ public class ProductEntity {
     private Long id;
 
     @Column
-    private int ProductNumber;
+    public int ProductNumber;
 
     @Column
     private String productName;
