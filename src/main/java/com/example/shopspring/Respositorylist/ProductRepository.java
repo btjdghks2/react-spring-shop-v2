@@ -28,4 +28,5 @@ public interface ProductRepository extends JpaRepository<ProductEntity, Long> {
     List<ProductEntity> shosecategory();
 
 
+    ProductEntity delete(Long id);
 }
