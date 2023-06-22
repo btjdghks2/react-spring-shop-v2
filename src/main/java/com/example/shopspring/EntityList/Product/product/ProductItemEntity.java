@@ -23,6 +23,8 @@ public class ProductItemEntity {
     @Column
     private int price;
 
+
+
     @OneToMany
     @JoinColumn(name = "productEntity_id")
     private List<ProductEntity> productEntity;

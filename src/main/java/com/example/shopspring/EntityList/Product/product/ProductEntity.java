@@ -27,6 +27,9 @@ public class ProductEntity {
     @Column
     private String productContent;
 
+    @Column
+    public int amount;
+
     @JoinColumn(name = "reple_id")
     @OneToMany
     private List<RepleEntity> repleEntityList;
