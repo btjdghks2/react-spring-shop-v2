@@ -1,5 +1,6 @@
 package com.example.shopspring.EntityList.Product.List;
 
+import com.example.shopspring.EntityList.Product.Member.MemberEntity;
 import com.example.shopspring.EntityList.Product.product.ProductEntity;
 import lombok.Data;
 
@@ -17,4 +18,6 @@ public class OrderEntity {
     @JoinColumn(name = "product_id")
     @OneToMany
     private List<ProductEntity> productEntityList;
+
+
 }

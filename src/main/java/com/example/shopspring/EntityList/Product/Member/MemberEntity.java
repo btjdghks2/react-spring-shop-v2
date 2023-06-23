@@ -1,8 +1,10 @@
 package com.example.shopspring.EntityList.Product.Member;
 
+import com.example.shopspring.EntityList.Product.List.OrderEntity;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -25,4 +27,6 @@ public class MemberEntity {
     @JoinColumn(name = "member_item")
     @OneToMany
     private List<MemberItemEntity> memberItemEntityList;
+
+
 }
