@@ -24,6 +24,15 @@ public class MemberEntity {
     @Column
     private String memberpassword;
 
+    @Column
+    private String mail;
+
+    @Column
+    private int age;
+
+    @Column
+    private String role;
+
     @JoinColumn(name = "member_item")
     @OneToMany
     private List<MemberItemEntity> memberItemEntityList;

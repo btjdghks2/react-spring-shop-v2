@@ -13,4 +13,8 @@ public class MemberDto {
 
 
     private String memberpassword;
+
+    private String email;
+    private int age;
+    private String role;
 }
